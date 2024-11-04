@@ -106,24 +106,56 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
-  .header-container {
-    height: 120px; 
-  }
-  .header-text h1 {
-    font-size: 1.5em;
-  }
-  .header-text h2 {
-    font-size: 1.2em;
-  }
-}
-
 @media (max-width: 480px) {
   .header-container {
-    height: 100px;
+    height: 120px;
+  }
+  .header-image {
+    height: 100%;
   }
   .header-text h1 {
-    font-size: 1.2em; 
+    font-size: 1.2em;
   }
   .header-text h2 {
+    font-size: 1em;
+  }
+
+  .tg, .tg thead, .tg tbody, .tg th, .tg td, .tg tr {
+    display: block;
+    width: 100%;
+  }
+
+  .tg tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+
+  .tg thead {
+    display: none;
+  }
+
+ 
+  .tg td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: none;
+  }
+
+  .tg td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #421C25;
+    margin-right: 10px;
+  }
+
+  
+  .tg td, .tg td::before {
+    font-size: 14px;
+  }
+}
     font-size: 1em;
